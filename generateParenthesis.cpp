@@ -4,6 +4,17 @@
 #include <tuple>
 using namespace std;
 
+// Generate valid parenthesis
+//input:
+// n = 3
+
+// output:
+// ((()))
+// (()())
+// (())()
+// ()(())
+// ()()()
+
 class Solution {
 public:
     vector<string> generateParenthesis(int n) {
@@ -36,7 +47,7 @@ public:
 
 int main() {
     Solution s;
-    std::vector<string> res = s.generateParenthesis(4);
+    std::vector<string> res = s.generateParenthesis(3);
     for(auto& i : res) {
         std::cout << i << std::endl;
     }
